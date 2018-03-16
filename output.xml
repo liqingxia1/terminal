@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.2 (Python 3.5.0 on win32)" generated="20171030 17:29:28.844">
+<suite source="C:\Users\Administrator\Desktop\test\phone\appium\jiaoben\android\robotFile" id="s1" name="robotFile">
+<suite source="C:\Users\Administrator\Desktop\test\phone\appium\jiaoben\android\robotFile\NicTalk" id="s1-s1" name="NicTalk">
+<kw type="setup" library="andpylib.Mobile" name="Android">
+<arguments>
+<arg>5.1.1</arg>
+<arg>com.nictalk.start</arg>
+<arg>com.xinwei.cootalk.view.activity.SplashActivity</arg>
+<arg>c47ad30c</arg>
+</arguments>
+<status status="PASS" starttime="20171030 17:29:28.980" endtime="20171030 17:29:36.576"></status>
+</kw>
+<suite source="C:\Users\Administrator\Desktop\test\phone\appium\jiaoben\android\robotFile\NicTalk\calls.robot" id="s1-s1-s1" name="Calls">
+<test id="s1-s1-s1-t1" name="登录NicTalk">
+<kw library="andpylib.CooTalk" name="Login Coo Talk">
+<arguments>
+<arg>柬埔寨</arg>
+<arg>0383030081</arg>
+<arg>123456</arg>
+</arguments>
+<msg timestamp="20171030 17:29:47.289" level="INFO">已登录</msg>
+<status status="PASS" starttime="20171030 17:29:36.590" endtime="20171030 17:29:47.290"></status>
+</kw>
+<status status="PASS" starttime="20171030 17:29:36.590" critical="yes" endtime="20171030 17:29:47.291"></status>
+</test>
+<test id="s1-s1-s1-t2" name="拨打112">
+<kw library="andpylib.CooTalk" name="Click Phone">
+<status status="PASS" starttime="20171030 17:29:47.298" endtime="20171030 17:29:47.480"></status>
+</kw>
+<kw library="andpylib.CooTalk" name="Call SendPhoneNumber">
+<arguments>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20171030 17:29:47.481" endtime="20171030 17:29:48.460"></status>
+</kw>
+<kw library="andpylib.CooTalk" name="Call SendPhoneNumber">
+<arguments>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20171030 17:29:48.461" endtime="20171030 17:29:49.910"></status>
+</kw>
+<kw library="andpylib.CooTalk" name="Call SendPhoneNumber">
+<arguments>
+<arg>2</arg>
+</arguments>
+<status status="PASS" starttime="20171030 17:29:49.911" endtime="20171030 17:29:51.303"></status>
+</kw>
+<kw library="andpylib.CooTalk" name="Click Dial">
+<assign>
+<var>${var}</var>
+</assign>
+<msg timestamp="20171030 17:30:07.111" level="INFO">${var} = 1</msg>
+<status status="PASS" starttime="20171030 17:29:51.305" endtime="20171030 17:30:07.111"></status>
+</kw>
+<kw library="BuiltIn" name="Should Be True">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>${var}==1</arg>
+</arguments>
+<status status="PASS" starttime="20171030 17:30:07.112" endtime="20171030 17:30:07.113"></status>
+</kw>
+<status status="PASS" starttime="20171030 17:29:47.295" critical="yes" endtime="20171030 17:30:07.113"></status>
+</test>
+<test id="s1-s1-s1-t3" name="V网使用拨号盘输入拨打电话">
+<kw library="andpylib.CooTalk" name="Clear PhoneNumber">
+<status status="PASS" starttime="20171030 17:30:07.120" endtime="20171030 17:30:12.699"></status>
+</kw>
+<kw library="andpylib.KeyEvents" name="SetNetwork Wifi">
+<status status="PASS" starttime="20171030 17:30:12.700" endtime="20171030 17:30:32.276"></status>
+</kw>
+<kw library="BuiltIn" name="Sleep">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20171030 17:30:34.278" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20171030 17:30:32.277" endtime="20171030 17:30:34.278"></status>
+</kw>
+<kw library="andpylib.CooTalk" name="Call SendPhoneNumber">
+<arguments>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20171030 17:30:34.280" endtime="20171030 17:30:34.723"></status>
+</kw>
+<kw library="andpylib.CooTalk" name="Call SendPhoneNumber">
+<arguments>
+<arg>3</arg>
+</arguments>
+<status status="PASS" starttime="20171030 17:30:34.725" endtime="20171030 17:30:36.228"></status>
+</kw>
+<kw library="andpylib.CooTalk" name="Call SendPhoneNumber">
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20171030 17:30:36.229" endtime="20171030 17:30:37.598"></status>
+</kw>
+<kw library="andpylib.CooTalk" name="Call SendPhoneNumber">
+<arguments>
+<arg>9</arg>
+</arguments>
+<status status="PASS" starttime="20171030 17:30:37.599" endtime="20171030 17:30:38.968"></status>
+</kw>
+<kw library="andpylib.CooTalk" name="Call SendPhoneNumber">
+<arguments>
+<arg>8</arg>
+</arguments>
+<status status="PASS" starttime="20171030 17:30:38.968" endtime="20171030 17:30:42.772"></status>
+</kw>
+<kw library="andpylib.CooTalk" name="Call SendPhoneNumber">
+<arguments>
+<arg>2</arg>
+</arguments>
+<status status="PASS" starttime="20171030 17:30:42.773" endtime="20171030 17:30:46.040"></status>
+</kw>
+<kw library="andpylib.CooTalk" name="Call SendPhoneNumber">
+<arguments>
+<arg>4</arg>
+</arguments>
+<status status="PASS" starttime="20171030 17:30:46.042" endtime="20171030 17:30:49.314"></status>
+</kw>
+<kw library="andpylib.CooTalk" name="Call SendPhoneNumber">
+<arguments>
+<arg>7</arg>
+</arguments>
+<status status="PASS" starttime="20171030 17:30:49.315" endtime="20171030 17:30:52.593"></status>
+</kw>
+<kw library="andpylib.CooTalk" name="Call SendPhoneNumber">
+<arguments>
+<arg>6</arg>
+</arguments>
+<status status="PASS" starttime="20171030 17:30:52.595" endtime="20171030 17:30:55.828"></status>
+</kw>
+<kw library="andpylib.CooTalk" name="Call SendPhoneNumber">
+<arguments>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20171030 17:30:55.830" endtime="20171030 17:30:59.146"></status>
+</kw>
+<kw library="andpylib.CooTalk" name="Call SendPhoneNumber">
+<arguments>
+<arg>4</arg>
+</arguments>
+<status status="PASS" starttime="20171030 17:30:59.147" endtime="20171030 17:31:02.382"></status>
+</kw>
+<kw library="andpylib.CooTalk" name="Click Dial">
+<arguments>
+<arg>V</arg>
+</arguments>
+<assign>
+<var>${var}</var>
+</assign>
+<msg timestamp="20171030 17:31:15.562" level="INFO">${var} = 1</msg>
+<status status="PASS" starttime="20171030 17:31:02.383" endtime="20171030 17:31:15.563"></status>
+</kw>
+<kw library="BuiltIn" name="Should Be True">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>${var}==1</arg>
+</arguments>
+<status status="PASS" starttime="20171030 17:31:15.564" endtime="20171030 17:31:15.564"></status>
+</kw>
+<status status="PASS" starttime="20171030 17:30:07.116" critical="yes" endtime="20171030 17:31:15.565"></status>
+</test>
+<test id="s1-s1-s1-t4" name="G网拨打13570818004">
+<kw library="andpylib.CooTalk" name="Clear PhoneNumber">
+<status status="PASS" starttime="20171030 17:31:15.569" endtime="20171030 17:31:20.836"></status>
+</kw>
+<kw library="BuiltIn" name="Sleep">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20171030 17:31:22.838" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20171030 17:31:20.837" endtime="20171030 17:31:22.838"></status>
+</kw>
+<kw library="andpylib.CooTalk" name="Send PhoneNumber">
+<arguments>
+<arg>13570818004</arg>
+</arguments>
+<status status="PASS" starttime="20171030 17:31:22.839" endtime="20171030 17:31:27.889"></status>
+</kw>
+<kw library="andpylib.CooTalk" name="Click Dial">
+<arguments>
+<arg>G</arg>
+</arguments>
+<assign>
+<var>${var}</var>
+</assign>
+<msg timestamp="20171030 17:31:35.467" level="INFO">${var} = 0</msg>
+<status status="PASS" starttime="20171030 17:31:27.890" endtime="20171030 17:31:35.467"></status>
+</kw>
+<kw library="BuiltIn" name="Should Be True">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>${var}==1</arg>
+</arguments>
+<msg timestamp="20171030 17:31:35.469" level="FAIL">'0==1' should be true.</msg>
+<status status="FAIL" starttime="20171030 17:31:35.468" endtime="20171030 17:31:35.469"></status>
+</kw>
+<status status="FAIL" starttime="20171030 17:31:15.567" critical="yes" endtime="20171030 17:31:35.471">'0==1' should be true.</status>
+</test>
+<status status="FAIL" starttime="20171030 17:29:36.576" endtime="20171030 17:31:35.474"></status>
+</suite>
+<suite source="C:\Users\Administrator\Desktop\test\phone\appium\jiaoben\android\robotFile\NicTalk\contacts.robot" id="s1-s1-s2" name="Contacts">
+<test id="s1-s1-s2-t1" name="新建联系人">
+<kw library="andpylib.CooTalk" name="Clic Contacts">
+<status status="PASS" starttime="20171030 17:31:35.490" endtime="20171030 17:31:37.663"></status>
+</kw>
+<kw library="andpylib.CooTalk" name="Click Add A Friends">
+<status status="PASS" starttime="20171030 17:31:37.665" endtime="20171030 17:31:38.953"></status>
+</kw>
+<kw library="andpylib.CooTalk" name="Click Add Phone Contacts">
+<arguments>
+<arg>tom</arg>
+<arg>15988884456</arg>
+</arguments>
+<status status="PASS" starttime="20171030 17:31:38.954" endtime="20171030 17:31:56.011"></status>
+</kw>
+<kw library="andpylib.KeyEvents" name="Back">
+<status status="PASS" starttime="20171030 17:31:56.011" endtime="20171030 17:31:56.064"></status>
+</kw>
+<kw library="andpylib.CooTalk" name="SearchContacts Name">
+<arguments>
+<arg>tom</arg>
+</arguments>
+<assign>
+<var>${var}</var>
+</assign>
+<msg timestamp="20171030 17:32:05.579" level="INFO">${var} = 1</msg>
+<status status="PASS" starttime="20171030 17:31:56.064" endtime="20171030 17:32:05.579"></status>
+</kw>
+<kw library="BuiltIn" name="Should Be True">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>${var}==1</arg>
+</arguments>
+<status status="PASS" starttime="20171030 17:32:05.579" endtime="20171030 17:32:05.580"></status>
+</kw>
+<status status="PASS" starttime="20171030 17:31:35.487" critical="yes" endtime="20171030 17:32:05.580"></status>
+</test>
+<test id="s1-s1-s2-t2" name="编辑联系人">
+<kw library="andpylib.CooTalk" name="Clic Contacts">
+<status status="PASS" starttime="20171030 17:32:05.583" endtime="20171030 17:32:05.766"></status>
+</kw>
+<kw library="andpylib.CooTalk" name="SearchContacts Name">
+<arguments>
+<arg>tom</arg>
+<arg>1</arg>
+</arguments>
+<status status="PASS" starttime="20171030 17:32:05.771" endtime="20171030 17:32:16.639"></status>
+</kw>
+<kw library="andpylib.CooTalk" name="Edit Contacts">
+<arguments>
+<arg>程戏</arg>
+<arg>18977777777</arg>
+</arguments>
+<msg timestamp="20171030 17:32:22.516" level="FAIL">NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
+</msg>
+<status status="FAIL" starttime="20171030 17:32:16.641" endtime="20171030 17:32:22.516"></status>
+</kw>
+<status status="FAIL" starttime="20171030 17:32:05.582" critical="yes" endtime="20171030 17:32:22.518">NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
+</status>
+</test>
+<test id="s1-s1-s2-t3" name="搜索联系人并拨打电话使用v网">
+<kw library="andpylib.CooTalk" name="Clic Contacts">
+<msg timestamp="20171030 17:32:28.522" level="FAIL">NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
+</msg>
+<status status="FAIL" starttime="20171030 17:32:22.530" endtime="20171030 17:32:28.522"></status>
+</kw>
+<status status="FAIL" starttime="20171030 17:32:22.525" critical="yes" endtime="20171030 17:32:28.523">NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
+</status>
+</test>
+<test id="s1-s1-s2-t4" name="搜索联系人并拨打电话使用G网">
+<kw library="andpylib.CooTalk" name="Clic Contacts">
+<msg timestamp="20171030 17:32:34.261" level="FAIL">NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
+</msg>
+<status status="FAIL" starttime="20171030 17:32:28.541" endtime="20171030 17:32:34.261"></status>
+</kw>
+<status status="FAIL" starttime="20171030 17:32:28.533" critical="yes" endtime="20171030 17:32:34.263">NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
+</status>
+</test>
+<test id="s1-s1-s2-t5" name="删除联系人">
+<kw library="andpylib.CooTalk" name="Clic Contacts">
+<msg timestamp="20171030 17:32:39.914" level="FAIL">NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
+</msg>
+<status status="FAIL" starttime="20171030 17:32:34.274" endtime="20171030 17:32:39.915"></status>
+</kw>
+<status status="FAIL" starttime="20171030 17:32:34.271" critical="yes" endtime="20171030 17:32:39.915">NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
+</status>
+</test>
+<status status="FAIL" starttime="20171030 17:31:35.479" endtime="20171030 17:32:39.921"></status>
+</suite>
+<kw type="teardown" library="andpylib.Mobile" name="Close App">
+<status status="PASS" starttime="20171030 17:32:39.929" endtime="20171030 17:32:40.727"></status>
+</kw>
+<status status="FAIL" starttime="20171030 17:29:28.872" endtime="20171030 17:32:40.727"></status>
+</suite>
+<suite source="C:\Users\Administrator\Desktop\test\phone\appium\jiaoben\android\robotFile\短信" id="s1-s2" name="短信">
+<kw type="setup" library="andpylib.Mobile" name="Android">
+<arguments>
+<arg>5.1.1</arg>
+<arg>com.android.mms</arg>
+<arg>.ui.ConversationList</arg>
+<arg>c47ad30c</arg>
+</arguments>
+<status status="PASS" starttime="20171030 17:32:40.743" endtime="20171030 17:32:47.649"></status>
+</kw>
+<suite source="C:\Users\Administrator\Desktop\test\phone\appium\jiaoben\android\robotFile\短信\短信.robot" id="s1-s2-s1" name="短信">
+<test id="s1-s2-s1-t1" name="新建收件人和短信内容，并发送">
+<kw library="andpylib.SMS" name="New SMS Button">
+<status status="PASS" starttime="20171030 17:32:47.660" endtime="20171030 17:32:49.434"></status>
+</kw>
+<kw library="andpylib.SMS" name="Receive People">
+<arguments>
+<arg>10010</arg>
+</arguments>
+<status status="PASS" starttime="20171030 17:32:49.436" endtime="20171030 17:32:56.050"></status>
+</kw>
+<kw library="andpylib.SMS" name="Information Content">
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20171030 17:32:56.051" endtime="20171030 17:33:01.956"></status>
+</kw>
+<kw library="andpylib.SMS" name="Send Way">
+<arguments>
+<arg>M</arg>
+</arguments>
+<status status="PASS" starttime="20171030 17:33:01.957" endtime="20171030 17:33:10.559"></status>
+</kw>
+<kw type="teardown" library="andpylib.SMS" name="Del Single Message">
+<arguments>
+<arg>10010</arg>
+<arg>删除</arg>
+</arguments>
+<status status="PASS" starttime="20171030 17:33:10.561" endtime="20171030 17:33:26.075"></status>
+</kw>
+<status status="PASS" starttime="20171030 17:32:47.658" critical="yes" endtime="20171030 17:33:26.076"></status>
+</test>
+<test id="s1-s2-s1-t2" name="新建收件人和使用模板内容，并发送">
+<kw library="andpylib.SMS" name="New SMS Button">
+<status status="PASS" starttime="20171030 17:33:26.090" endtime="20171030 17:33:26.922"></status>
+</kw>
+<kw library="andpylib.SMS" name="Receive People">
+<arguments>
+<arg>10086</arg>
+</arguments>
+<status status="PASS" starttime="20171030 17:33:26.923" endtime="20171030 17:33:33.626"></status>
+</kw>
+<kw library="andpylib.SMS" name="Quick Reply">
+<status status="PASS" starttime="20171030 17:33:33.627" endtime="20171030 17:33:34.250"></status>
+</kw>
+<kw library="andpylib.SMS" name="Import Template Button">
+<status status="PASS" starttime="20171030 17:33:34.251" endtime="20171030 17:33:35.323"></status>
+</kw>
+<kw library="andpylib.SMS" name="Import Template">
+<arguments>
+<arg>我过会儿打给您。</arg>
+</arguments>
+<msg timestamp="20171030 17:33:37.386" level="INFO">短信模板
+我过会儿打给您。
+我在开会，稍后打给您。
+过会儿再打给我。
+请回拨我，好吗？
+现在不方便接听电话
+我过会打给你
+1</msg>
+<status status="PASS" starttime="20171030 17:33:35.323" endtime="20171030 17:33:37.387"></status>
+</kw>
+<kw library="andpylib.SMS" name="Send Way">
+<arguments>
+<arg>M</arg>
+</arguments>
+<status status="PASS" starttime="20171030 17:33:37.387" endtime="20171030 17:33:45.836"></status>
+</kw>
+<kw type="teardown" library="andpylib.SMS" name="Del Single Message">
+<arguments>
+<arg>10086</arg>
+<arg>删除</arg>
+</arguments>
+<status status="PASS" starttime="20171030 17:33:45.838" endtime="20171030 17:34:05.292"></status>
+</kw>
+<status status="PASS" starttime="20171030 17:33:26.080" critical="yes" endtime="20171030 17:34:05.292"></status>
+</test>
+<test id="s1-s2-s1-t3" name="删除单条短信">
+<kw type="setup" library="BuiltIn" name="Run Keywords">
+<doc>Executes all the given keywords in a sequence.</doc>
+<arguments>
+<arg>newSMSButton</arg>
+<arg>AND</arg>
+<arg>receivePeople</arg>
+<arg>10010</arg>
+<arg>AND</arg>
+<arg>InformationContent</arg>
+<arg>5</arg>
+<arg>AND</arg>
+<arg>sendWay</arg>
+<arg>M</arg>
+</arguments>
+<kw library="andpylib.SMS" name="New SMS Button">
+<status status="PASS" starttime="20171030 17:34:05.300" endtime="20171030 17:34:05.983"></status>
+</kw>
+<kw library="andpylib.SMS" name="Receive People">
+<arguments>
+<arg>10010</arg>
+</arguments>
+<status status="PASS" starttime="20171030 17:34:05.983" endtime="20171030 17:34:13.411"></status>
+</kw>
+<kw library="andpylib.SMS" name="Information Content">
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20171030 17:34:13.412" endtime="20171030 17:34:18.930"></status>
+</kw>
+<kw library="andpylib.SMS" name="Send Way">
+<arguments>
+<arg>M</arg>
+</arguments>
+<status status="PASS" starttime="20171030 17:34:18.930" endtime="20171030 17:34:27.370"></status>
+</kw>
+<status status="PASS" starttime="20171030 17:34:05.298" endtime="20171030 17:34:27.370"></status>
+</kw>
+<kw library="andpylib.SMS" name="Del Single Message">
+<arguments>
+<arg>10010</arg>
+<arg>删除</arg>
+</arguments>
+<status status="PASS" starttime="20171030 17:34:27.371" endtime="20171030 17:34:47.347"></status>
+</kw>
+<status status="PASS" starttime="20171030 17:34:05.295" critical="yes" endtime="20171030 17:34:47.348"></status>
+</test>
+<test id="s1-s2-s1-t4" name="新建常用语句">
+<kw library="andpylib.SMS" name="More Options">
+<status status="PASS" starttime="20171030 17:34:47.355" endtime="20171030 17:34:47.675"></status>
+</kw>
+<kw library="andpylib.SMS" name="Click Setting">
+<status status="PASS" starttime="20171030 17:34:47.676" endtime="20171030 17:34:48.920"></status>
+</kw>
+<kw library="andpylib.SMS" name="Click SMS Template">
+<status status="PASS" starttime="20171030 17:34:48.921" endtime="20171030 17:34:56.817"></status>
+</kw>
+<kw library="andpylib.SMS" name="New Template">
+<arguments>
+<arg>我在忙，现在不方便接听电话！！！</arg>
+<arg>确定</arg>
+</arguments>
+<assign>
+<var>${ruInfo}</var>
+</assign>
+<msg timestamp="20171030 17:35:05.843" level="INFO">${ruInfo} = 模板添加成功</msg>
+<status status="PASS" starttime="20171030 17:34:56.819" endtime="20171030 17:35:05.843"></status>
+</kw>
+<kw library="BuiltIn" name="Log To Console">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${ruInfo}</arg>
+</arguments>
+<status status="PASS" starttime="20171030 17:35:05.844" endtime="20171030 17:35:05.846"></status>
+</kw>
+<kw type="teardown" library="BuiltIn" name="Run Keywords">
+<doc>Executes all the given keywords in a sequence.</doc>
+<arguments>
+<arg>delTemplateList</arg>
+<arg>我在忙，现在不方便接听电话！！！</arg>
+<arg>AND</arg>
+<arg>Upward</arg>
+<arg>AND</arg>
+<arg>Upward</arg>
+</arguments>
+<kw library="andpylib.SMS" name="Del Template List">
+<arguments>
+<arg>我在忙，现在不方便接听电话！！！</arg>
+</arguments>
+<status status="PASS" starttime="20171030 17:35:05.848" endtime="20171030 17:35:12.075"></status>
+</kw>
+<kw library="andpylib.SMS" name="Upward">
+<status status="PASS" starttime="20171030 17:35:12.076" endtime="20171030 17:35:22.675"></status>
+</kw>
+<kw library="andpylib.SMS" name="Upward">
+<status status="PASS" starttime="20171030 17:35:22.676" endtime="20171030 17:35:32.829"></status>
+</kw>
+<status status="PASS" starttime="20171030 17:35:05.847" endtime="20171030 17:35:32.829"></status>
+</kw>
+<status status="PASS" starttime="20171030 17:34:47.351" critical="yes" endtime="20171030 17:35:32.830"></status>
+</test>
+<test id="s1-s2-s1-t5" name="修改常用语句">
+<kw type="setup" library="BuiltIn" name="Run Keywords">
+<doc>Executes all the given keywords in a sequence.</doc>
+<arguments>
+<arg>moreOptions</arg>
+<arg>AND</arg>
+<arg>clickSetting</arg>
+<arg>AND</arg>
+<arg>clickSMSTemplate</arg>
+<arg>AND</arg>
+<arg>newTemplate</arg>
+<arg>我在忙，现在不方便接听电话！！！</arg>
+<arg>确定</arg>
+</arguments>
+<kw library="andpylib.SMS" name="More Options">
+<status status="PASS" starttime="20171030 17:35:32.836" endtime="20171030 17:35:33.747"></status>
+</kw>
+<kw library="andpylib.SMS" name="Click Setting">
+<status status="PASS" starttime="20171030 17:35:33.747" endtime="20171030 17:35:34.844"></status>
+</kw>
+<kw library="andpylib.SMS" name="Click SMS Template">
+<status status="PASS" starttime="20171030 17:35:34.845" endtime="20171030 17:35:42.917"></status>
+</kw>
+<kw library="andpylib.SMS" name="New Template">
+<arguments>
+<arg>我在忙，现在不方便接听电话！！！</arg>
+<arg>确定</arg>
+</arguments>
+<status status="PASS" starttime="20171030 17:35:42.918" endtime="20171030 17:35:52.052"></status>
+</kw>
+<status status="PASS" starttime="20171030 17:35:32.835" endtime="20171030 17:35:52.052"></status>
+</kw>
+<kw library="andpylib.SMS" name="Edit Template">
+<arguments>
+<arg>我在忙，现在不方便接听电话！！！</arg>
+<arg>我过会打给你</arg>
+<arg>确定</arg>
+</arguments>
+<assign>
+<var>${ruInfo}</var>
+</assign>
+<msg timestamp="20171030 17:36:15.160" level="INFO">${ruInfo} = 模板修改成功</msg>
+<status status="PASS" starttime="20171030 17:35:52.053" endtime="20171030 17:36:15.161"></status>
+</kw>
+<kw library="BuiltIn" name="Log To Console">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${ruInfo}</arg>
+</arguments>
+<status status="PASS" starttime="20171030 17:36:15.162" endtime="20171030 17:36:15.163"></status>
+</kw>
+<kw type="teardown" library="BuiltIn" name="Run Keywords">
+<doc>Executes all the given keywords in a sequence.</doc>
+<arguments>
+<arg>delTemplateList</arg>
+<arg>我过会打给你</arg>
+<arg>AND</arg>
+<arg>Upward</arg>
+<arg>AND</arg>
+<arg>Upward</arg>
+</arguments>
+<kw library="andpylib.SMS" name="Del Template List">
+<arguments>
+<arg>我过会打给你</arg>
+</arguments>
+<status status="PASS" starttime="20171030 17:36:15.165" endtime="20171030 17:36:21.271"></status>
+</kw>
+<kw library="andpylib.SMS" name="Upward">
+<status status="PASS" starttime="20171030 17:36:21.271" endtime="20171030 17:36:31.968"></status>
+</kw>
+<kw library="andpylib.SMS" name="Upward">
+<status status="PASS" starttime="20171030 17:36:31.968" endtime="20171030 17:36:43.064"></status>
+</kw>
+<status status="PASS" starttime="20171030 17:36:15.164" endtime="20171030 17:36:43.064"></status>
+</kw>
+<status status="PASS" starttime="20171030 17:35:32.832" critical="yes" endtime="20171030 17:36:43.064"></status>
+</test>
+<test id="s1-s2-s1-t6" name="删除常用语句">
+<kw type="setup" library="BuiltIn" name="Run Keywords">
+<doc>Executes all the given keywords in a sequence.</doc>
+<arguments>
+<arg>moreOptions</arg>
+<arg>AND</arg>
+<arg>clickSetting</arg>
+<arg>AND</arg>
+<arg>clickSMSTemplate</arg>
+<arg>AND</arg>
+<arg>newTemplate</arg>
+<arg>我在忙，现在不方便接听电话！！！</arg>
+<arg>确定</arg>
+</arguments>
+<kw library="andpylib.SMS" name="More Options">
+<status status="PASS" starttime="20171030 17:36:43.066" endtime="20171030 17:36:44.047"></status>
+</kw>
+<kw library="andpylib.SMS" name="Click Setting">
+<status status="PASS" starttime="20171030 17:36:44.047" endtime="20171030 17:36:45.325"></status>
+</kw>
+<kw library="andpylib.SMS" name="Click SMS Template">
+<status status="PASS" starttime="20171030 17:36:45.326" endtime="20171030 17:36:52.888"></status>
+</kw>
+<kw library="andpylib.SMS" name="New Template">
+<arguments>
+<arg>我在忙，现在不方便接听电话！！！</arg>
+<arg>确定</arg>
+</arguments>
+<status status="PASS" starttime="20171030 17:36:52.889" endtime="20171030 17:37:02.447"></status>
+</kw>
+<status status="PASS" starttime="20171030 17:36:43.066" endtime="20171030 17:37:02.447"></status>
+</kw>
+<kw library="andpylib.SMS" name="Del Template List">
+<arguments>
+<arg>我在忙，现在不方便接听电话！！！</arg>
+</arguments>
+<assign>
+<var>${ruInfo}</var>
+</assign>
+<msg timestamp="20171030 17:37:08.688" level="INFO">${ruInfo} = None</msg>
+<status status="PASS" starttime="20171030 17:37:02.449" endtime="20171030 17:37:08.688"></status>
+</kw>
+<kw library="BuiltIn" name="Log To Console">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${ruInfo}</arg>
+</arguments>
+<status status="PASS" starttime="20171030 17:37:08.690" endtime="20171030 17:37:08.691"></status>
+</kw>
+<status status="PASS" starttime="20171030 17:36:43.065" critical="yes" endtime="20171030 17:37:08.692"></status>
+</test>
+<status status="PASS" starttime="20171030 17:32:47.649" endtime="20171030 17:37:08.696"></status>
+</suite>
+<kw type="teardown" library="andpylib.Mobile" name="Close App">
+<status status="PASS" starttime="20171030 17:37:08.707" endtime="20171030 17:37:09.561"></status>
+</kw>
+<status status="PASS" starttime="20171030 17:32:40.736" endtime="20171030 17:37:09.561"></status>
+</suite>
+<suite source="C:\Users\Administrator\Desktop\test\phone\appium\jiaoben\android\robotFile\网络" id="s1-s3" name="网络">
+<kw type="setup" library="andpylib.Mobile" name="Android">
+<arguments>
+<arg>5.1.1</arg>
+<arg>com.android.settings</arg>
+<arg>Settings</arg>
+<arg>c47ad30c</arg>
+</arguments>
+<status status="PASS" starttime="20171030 17:37:09.567" endtime="20171030 17:37:17.596"></status>
+</kw>
+<suite source="C:\Users\Administrator\Desktop\test\phone\appium\jiaoben\android\robotFile\网络\Network.robot" id="s1-s3-s1" name="Network">
+<test id="s1-s3-s1-t1" name="打开wifi">
+<kw library="andpylib.KeyEvents" name="SetNetwork None">
+<status status="PASS" starttime="20171030 17:37:17.608" endtime="20171030 17:37:37.165"></status>
+</kw>
+<kw library="andpylib.DataConnection" name="Wifi Open">
+<assign>
+<var>${info}</var>
+</assign>
+<msg timestamp="20171030 17:38:12.588" level="FAIL">TypeError: android() missing 1 required positional argument: 'udid'</msg>
+<status status="FAIL" starttime="20171030 17:37:37.166" endtime="20171030 17:38:12.588"></status>
+</kw>
+<status status="FAIL" starttime="20171030 17:37:17.607" critical="yes" endtime="20171030 17:38:12.590">TypeError: android() missing 1 required positional argument: 'udid'</status>
+</test>
+<status status="FAIL" starttime="20171030 17:37:17.596" endtime="20171030 17:38:12.592"></status>
+</suite>
+<kw type="teardown" library="andpylib.Mobile" name="Close App">
+<msg timestamp="20171030 17:38:12.598" level="FAIL">WebDriverException: Message: 
+</msg>
+<status status="FAIL" starttime="20171030 17:38:12.593" endtime="20171030 17:38:12.598">WebDriverException: Message: 
+</status>
+</kw>
+<status status="FAIL" starttime="20171030 17:37:09.564" endtime="20171030 17:38:12.598">Suite teardown failed:
+WebDriverException: Message: 
+</status>
+</suite>
+<status status="FAIL" starttime="20171030 17:29:28.848" endtime="20171030 17:38:12.601"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="6" pass="10">Critical Tests</stat>
+<stat fail="6" pass="10">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="6" id="s1" pass="10" name="robotFile">robotFile</stat>
+<stat fail="5" id="s1-s1" pass="4" name="NicTalk">robotFile.NicTalk</stat>
+<stat fail="1" id="s1-s1-s1" pass="3" name="Calls">robotFile.NicTalk.Calls</stat>
+<stat fail="4" id="s1-s1-s2" pass="1" name="Contacts">robotFile.NicTalk.Contacts</stat>
+<stat fail="0" id="s1-s2" pass="6" name="短信">robotFile.短信</stat>
+<stat fail="0" id="s1-s2-s1" pass="6" name="短信">robotFile.短信.短信</stat>
+<stat fail="1" id="s1-s3" pass="0" name="网络">robotFile.网络</stat>
+<stat fail="1" id="s1-s3-s1" pass="0" name="Network">robotFile.网络.Network</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
